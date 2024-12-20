@@ -1,4 +1,4 @@
-library spotlight_nav_bar;
+library highlight_nav_bar;
 
 import 'package:flutter/material.dart';
 import 'package:spotlight_nav_bar/spotlight_item.dart';

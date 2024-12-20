@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:spotlight_nav_bar/spotlight_item.dart';
-import 'package:spotlight_nav_bar/spotlight_nav_bar.dart';
+import 'package:highlight_nav_bar/spotlight_item.dart';
+import 'package:highlight_nav_bar/spotlight_nav_bar.dart';
 
 void main() {
   runApp(const MyApp());
