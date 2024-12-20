@@ -1,8 +1,6 @@
 # Spotlight Bottom Navigation Bar for Flutter
 
-[![Pub Version](https://img.shields.io/pub/v/highlight_nav_bar?color=blueviolet)](https://pub.dev/packages/highlight_nav_bar)
-
-Adds a spotlight theme to your bottom navigation bar
+Adds a spotlight theme to your bottom navigation bar.
 
 ## Installing:
 
@@ -17,10 +15,7 @@ dependencies:
 
 ```dart  
 import 'package:spotlight_nav_bar/spotlight_nav_bar.dart';
-```  
-
-<br>
-<br>
+```
 
 ## Usage
 
