@@ -1,39 +1,67 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Spotlight Bottom Navigation Bar for Flutter
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+[![Pub Version](https://img.shields.io/pub/v/spotlight_nav_bar?color=blueviolet)](https://pub.dev/packages/spotlight_nav_bar)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+Adds a spotlight theme to your bottom navigation bar
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## Installing:
 
-## Features
+1. Add the dependency in your `pubspec.yaml` file.
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+```yaml  
+dependencies:  
+ spotlight_nav_bar: <latest version>
+ ```  
 
-## Getting started
+2. Import the `spotlight_nav_bar` package.
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+```dart  
+import 'package:spotlight_nav_bar/spotlight_nav_bar.dart';
+```  
+
+<br>
+<br>
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+MaterialApp(
+  title: 'SpotlightNavBar Example',
+  theme: ThemeData.light(),
+  darkTheme: ThemeData.dark(),
+  themeMode: ThemeMode.system,
+  home: SpotlightNavBar(
+    items: [
+      SpotlightItem(
+        title: 'Home',
+        screen: const Center(
+          child: Text('Home'),
+        ),
+      ),
+      SpotlightItem(
+        title: 'Search',
+        screen: const Center(
+          child: Text('Search'),
+        ),
+        icon: Icons.search,
+        spotlightColor: Colors.green,
+      ),
+      SpotlightItem(
+        title: 'Profile',
+        screen: const Center(
+          child: Text('Profile'),
+        ),
+        icon: Icons.person,
+        lampColor: Colors.red,
+        spotlightColor: Colors.blue,
+      ),
+    ],
+  ));
 ```
 
-## Additional information
+## Examples
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+<img src="https://github.com/user-attachments/assets/df185526-6265-439f-a821-dcfdebdc5b9f" alt="black_white" width="300">
+
+<img src="https://github.com/user-attachments/assets/40b1ebbc-0540-4093-b2f4-084e68c0edf3" alt="blue_yellow" width="300">
+
