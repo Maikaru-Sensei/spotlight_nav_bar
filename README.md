@@ -7,14 +7,14 @@ Adds a spotlight theme to your bottom navigation bar.
 1. Add the dependency in your `pubspec.yaml` file.
 
 ```yaml  
-dependencies:  
- spotlight_nav_bar: <latest version>
+dependencies:
+  highlight_nav_bar: <latest version>
  ```  
 
-2. Import the `spotlight_nav_bar` package.
+2. Import the `highlight_nav_bar` package.
 
 ```dart  
-import 'package:spotlight_nav_bar/spotlight_nav_bar.dart';
+import 'package:highlight_nav_bar/spotlight_nav_bar.dart';
 ```
 
 ## Usage
